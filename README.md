@@ -311,6 +311,23 @@ the first 30 of attempt 1's 60.
 
 ---
 
+## Next steps
+
+The failures are at the grasp, and the demos never show a recovery. So the next steps target the grasp and try to
+make more of each demo come from me:
+
+1. **Record recoveries.** More clips where the block slips or falls from my hand and I pick it up again, retargeted
+   through the whole recovery, so the VLA sees how to correct a bad grasp and not only clean ones.
+2. **A wrist camera on my own hand while recording.** The robot's wrist camera gave the biggest gain (45 → 52 %).
+   Recording my demos with a matching wrist view would give the VLA that view from human data, not only from simulation.
+3. **Replace the scripted grasp and place with my motion.** With 1 and 2, my own motion can cover the last 14 cm and the
+   place as well, so the demos come 100 % from me instead of 54 %. IK stays: it only turns the hand pose into joint angles.
+4. **Correction data (DAgger-style).** Let the VLA drive and record a corrector taking over when it is 2–4 cm off at the
+   grasp. That is where the lift rate drops from 81 % to 43 %.
+5. **Lying blocks.** 10 of my 26 clips (block on its side) are not used yet.
+
+---
+
 ## Repo layout
 ```
 common/                       shared by both attempts

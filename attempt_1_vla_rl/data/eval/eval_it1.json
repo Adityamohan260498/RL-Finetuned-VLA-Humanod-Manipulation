@@ -1,0 +1,589 @@
+{
+ "summary": {
+  "label": "eval_it1",
+  "episodes": 30,
+  "success": 0.467,
+  "lifted": 0.5,
+  "fallen": 0.0,
+  "median_place_err_cm": 3.15,
+  "stage_reach": [
+   1.0,
+   0.867,
+   0.5,
+   0.5,
+   0.433
+  ]
+ },
+ "episodes": [
+  {
+   "ep": 0,
+   "xy": [
+    0.302,
+    -0.224
+   ],
+   "yaw": -14.0,
+   "lifted": true,
+   "place_err_cm": 1.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 117,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 1,
+   "xy": [
+    0.228,
+    -0.209
+   ],
+   "yaw": 15.6,
+   "lifted": false,
+   "place_err_cm": 24.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 36,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 2,
+   "xy": [
+    0.339,
+    -0.197
+   ],
+   "yaw": 16.0,
+   "lifted": false,
+   "place_err_cm": 4.7,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 9.3,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 3,
+   "xy": [
+    0.333,
+    -0.168
+   ],
+   "yaw": -12.8,
+   "lifted": false,
+   "place_err_cm": 12.0,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 174,
+   "drift_cm": 10.0,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 4,
+   "xy": [
+    0.324,
+    -0.204
+   ],
+   "yaw": 12.1,
+   "lifted": true,
+   "place_err_cm": 2.4,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 10.7,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 1125
+  },
+  {
+   "ep": 5,
+   "xy": [
+    0.294,
+    -0.119
+   ],
+   "yaw": -13.4,
+   "lifted": false,
+   "place_err_cm": 2.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 40,
+   "drift_cm": 38.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 6,
+   "xy": [
+    0.32,
+    -0.168
+   ],
+   "yaw": -13.4,
+   "lifted": true,
+   "place_err_cm": 3.4,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 90,
+   "drift_cm": 16.1,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 1125
+  },
+  {
+   "ep": 7,
+   "xy": [
+    0.225,
+    -0.17
+   ],
+   "yaw": 4.1,
+   "lifted": true,
+   "place_err_cm": 2.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 84,
+   "drift_cm": 85.4,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 8,
+   "xy": [
+    0.228,
+    -0.228
+   ],
+   "yaw": -1.4,
+   "lifted": false,
+   "place_err_cm": 18.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 10.9,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 9,
+   "xy": [
+    0.309,
+    -0.12
+   ],
+   "yaw": 6.3,
+   "lifted": false,
+   "place_err_cm": 6.8,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 127,
+   "drift_cm": 10.3,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 10,
+   "xy": [
+    0.338,
+    -0.126
+   ],
+   "yaw": -14.1,
+   "lifted": false,
+   "place_err_cm": 7.2,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 142,
+   "drift_cm": 216.3,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 11,
+   "xy": [
+    0.33,
+    -0.142
+   ],
+   "yaw": -11.1,
+   "lifted": false,
+   "place_err_cm": 12.0,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 60,
+   "drift_cm": 48.4,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 12,
+   "xy": [
+    0.32,
+    -0.126
+   ],
+   "yaw": -10.0,
+   "lifted": false,
+   "place_err_cm": 8.4,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 201,
+   "drift_cm": 52.1,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 13,
+   "xy": [
+    0.279,
+    -0.221
+   ],
+   "yaw": 4.2,
+   "lifted": true,
+   "place_err_cm": 2.9,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 93,
+   "drift_cm": 29.4,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 14,
+   "xy": [
+    0.236,
+    -0.138
+   ],
+   "yaw": -16.3,
+   "lifted": true,
+   "place_err_cm": 0.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 190,
+   "drift_cm": 57.9,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 15,
+   "xy": [
+    0.247,
+    -0.228
+   ],
+   "yaw": -23.4,
+   "lifted": true,
+   "place_err_cm": 0.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 78,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 16,
+   "xy": [
+    0.275,
+    -0.174
+   ],
+   "yaw": -18.6,
+   "lifted": false,
+   "place_err_cm": 12.9,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 86,
+   "drift_cm": 10.5,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 17,
+   "xy": [
+    0.239,
+    -0.23
+   ],
+   "yaw": -5.9,
+   "lifted": true,
+   "place_err_cm": 1.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 44,
+   "drift_cm": 12.3,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 18,
+   "xy": [
+    0.286,
+    -0.179
+   ],
+   "yaw": 16.8,
+   "lifted": true,
+   "place_err_cm": 1.8,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 34,
+   "drift_cm": 9.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 19,
+   "xy": [
+    0.292,
+    -0.198
+   ],
+   "yaw": 15.6,
+   "lifted": true,
+   "place_err_cm": 0.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 43,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 20,
+   "xy": [
+    0.275,
+    -0.139
+   ],
+   "yaw": 3.3,
+   "lifted": false,
+   "place_err_cm": 13.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 172,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 21,
+   "xy": [
+    0.266,
+    -0.182
+   ],
+   "yaw": -23.9,
+   "lifted": true,
+   "place_err_cm": 0.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 77,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 22,
+   "xy": [
+    0.27,
+    -0.155
+   ],
+   "yaw": 22.3,
+   "lifted": false,
+   "place_err_cm": 12.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 137,
+   "drift_cm": 8.4,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 23,
+   "xy": [
+    0.265,
+    -0.172
+   ],
+   "yaw": 1.0,
+   "lifted": true,
+   "place_err_cm": 2.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 48,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 24,
+   "xy": [
+    0.261,
+    -0.161
+   ],
+   "yaw": -21.5,
+   "lifted": true,
+   "place_err_cm": 1.8,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 112,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 25,
+   "xy": [
+    0.273,
+    -0.157
+   ],
+   "yaw": 12.2,
+   "lifted": false,
+   "place_err_cm": 15.5,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 126,
+   "drift_cm": 8.3,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 26,
+   "xy": [
+    0.264,
+    -0.194
+   ],
+   "yaw": -24.7,
+   "lifted": true,
+   "place_err_cm": 0.3,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 62,
+   "drift_cm": 8.4,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 27,
+   "xy": [
+    0.313,
+    -0.221
+   ],
+   "yaw": -0.5,
+   "lifted": true,
+   "place_err_cm": 1.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 16,
+   "drift_cm": 10.4,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 28,
+   "xy": [
+    0.246,
+    -0.129
+   ],
+   "yaw": 22.5,
+   "lifted": false,
+   "place_err_cm": 12.3,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 144,
+   "drift_cm": 9.8,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  },
+  {
+   "ep": 29,
+   "xy": [
+    0.248,
+    -0.122
+   ],
+   "yaw": -8.1,
+   "lifted": false,
+   "place_err_cm": 13.9,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 264,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 1125
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+diff --git a/src/mjlab/tasks/velocity/config/g1/__init__.py b/src/mjlab/tasks/velocity/config/g1/__init__.py
+index debab01bd..000b481e8 100644
+--- a/src/mjlab/tasks/velocity/config/g1/__init__.py
++++ b/src/mjlab/tasks/velocity/config/g1/__init__.py
+@@ -5,7 +5,11 @@ from .env_cfgs import (
+   unitree_g1_flat_env_cfg,
+   unitree_g1_rough_env_cfg,
+ )
+-from .rl_cfg import unitree_g1_ppo_runner_cfg
++from .env_cfgs_sysid import unitree_g1_flat_sysid_env_cfg
++from .rl_cfg import (
++  unitree_g1_ppo_runner_cfg,
++  unitree_g1_sysid_ppo_runner_cfg,
++)
+ 
+ register_mjlab_task(
+   task_id="Mjlab-Velocity-Rough-Unitree-G1",
+@@ -22,3 +26,11 @@ register_mjlab_task(
+   rl_cfg=unitree_g1_ppo_runner_cfg(),
+   runner_cls=VelocityOnPolicyRunner,
+ )
++
++register_mjlab_task(
++  task_id="Mjlab-Velocity-Flat-Unitree-G1-SysID",
++  env_cfg=unitree_g1_flat_sysid_env_cfg(),
++  play_env_cfg=unitree_g1_flat_sysid_env_cfg(play=True),
++  rl_cfg=unitree_g1_sysid_ppo_runner_cfg(),
++  runner_cls=VelocityOnPolicyRunner,
++)
+diff --git a/src/mjlab/tasks/velocity/config/g1/env_cfgs.py b/src/mjlab/tasks/velocity/config/g1/env_cfgs.py
+index 28bb3f468..4c79ee882 100644
+--- a/src/mjlab/tasks/velocity/config/g1/env_cfgs.py
++++ b/src/mjlab/tasks/velocity/config/g1/env_cfgs.py
+@@ -1,14 +1,20 @@
+ """Unitree G1 velocity environment configurations."""
+ 
++from copy import deepcopy
++from dataclasses import replace
++
+ from mjlab.asset_zoo.robots import (
+   G1_ACTION_SCALE,
+   get_g1_robot_cfg,
+ )
+ from mjlab.envs import ManagerBasedRlEnvCfg
+ from mjlab.envs import mdp as envs_mdp
++from mjlab.envs.mdp import dr
+ from mjlab.envs.mdp.actions import JointPositionActionCfg
++from mjlab.managers.curriculum_manager import CurriculumTermCfg
+ from mjlab.managers.event_manager import EventTermCfg
+ from mjlab.managers.reward_manager import RewardTermCfg
++from mjlab.managers.scene_entity_config import SceneEntityCfg
+ from mjlab.sensor import (
+   ContactMatch,
+   ContactSensorCfg,
+@@ -21,6 +27,32 @@ from mjlab.tasks.velocity import mdp
+ from mjlab.tasks.velocity.mdp import UniformVelocityCommandCfg
+ from mjlab.tasks.velocity.velocity_env_cfg import make_velocity_env_cfg
+ 
++# Domain-randomization schedule, keyed by event name. ``step`` is
++# ``common_step_counter`` = iteration * num_steps_per_env (24), matching the
++# existing command curriculum. The ramp completes at iteration 6000 of 30000,
++# leaving the bulk of training at the full ranges.
++_DR_SCHEDULE: dict[str, list[envs_mdp.EventCurriculumStage]] = {
++  # Nm of dry friction per joint. The real G1 stalls around here at kp=40-99.
++  "joint_friction": [
++    {"step": 0, "params": {"ranges": (0.0, 0.2)}},
++    {"step": 2000 * 24, "params": {"ranges": (0.0, 0.5)}},
++    {"step": 6000 * 24, "params": {"ranges": (0.0, 1.0)}},
++  ],
++  # Multiplier on the sim PD gains the deploy runner replays verbatim.
++  "pd_gains": [
++    {"step": 0, "params": {"kp_range": (0.95, 1.05), "kd_range": (0.95, 1.05)}},
++    {"step": 2000 * 24, "params": {"kp_range": (0.9, 1.1), "kd_range": (0.9, 1.1)}},
++    {"step": 6000 * 24, "params": {"kp_range": (0.8, 1.2), "kd_range": (0.8, 1.2)}},
++  ],
++  # Multiplier on torque headroom. Capped at 1.0: the real motors never
++  # deliver more than the rated limit, only less.
++  "effort_limits": [
++    {"step": 0, "params": {"effort_limit_range": (0.95, 1.0)}},
++    {"step": 2000 * 24, "params": {"effort_limit_range": (0.9, 1.0)}},
++    {"step": 6000 * 24, "params": {"effort_limit_range": (0.8, 1.0)}},
++  ],
++}
++
+ 
+ def unitree_g1_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
+   """Create Unitree G1 rough terrain velocity configuration."""
+@@ -87,6 +119,71 @@ def unitree_g1_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
+   assert isinstance(joint_pos_action, JointPositionActionCfg)
+   joint_pos_action.scale = G1_ACTION_SCALE
+ 
++  # The real G1 has no base linear velocity sensor: rt/lowstate carries only
++  # quaternion, gyro, accelerometer and joint encoders. Keep the term as
++  # privileged critic-only information so the actor is deployable as-is.
++  del cfg.observations["actor"].terms["base_lin_vel"]
++
++  # Sim-to-real gap: the G1 MJCF sets no dof_frictionloss, so simulated legs
++  # swing freely under load while the real drivetrain stalls. Without this the
++  # policy walks when the robot hangs but freezes once it bears weight, because
++  # the joints stop moving and the observation goes static.
++  #
++  # These run on "reset" rather than "startup": a startup event draws one
++  # sample per env and freezes it for the whole run, so the policy sees only
++  # 4096 fixed drivetrains and can overfit to its own. Re-drawing every episode
++  # gives it a fresh batch each time, and lets the curriculum below widen the
++  # ranges as training progresses.
++  cfg.events["joint_friction"] = EventTermCfg(
++    mode="reset",
++    func=dr.joint_friction,
++    params={
++      "asset_cfg": SceneEntityCfg("robot"),
++      "operation": "abs",
++      "ranges": _DR_SCHEDULE["joint_friction"][0]["params"]["ranges"],
++    },
++  )
++  cfg.events["pd_gains"] = EventTermCfg(
++    mode="reset",
++    func=dr.pd_gains,
++    params={
++      "asset_cfg": SceneEntityCfg("robot"),
++      "kp_range": _DR_SCHEDULE["pd_gains"][0]["params"]["kp_range"],
++      "kd_range": _DR_SCHEDULE["pd_gains"][0]["params"]["kd_range"],
++      "operation": "scale",
++    },
++  )
++  cfg.events["effort_limits"] = EventTermCfg(
++    mode="reset",
++    func=dr.effort_limits,
++    params={
++      "asset_cfg": SceneEntityCfg("robot"),
++      "effort_limit_range": (
++        _DR_SCHEDULE["effort_limits"][0]["params"]["effort_limit_range"]
++      ),
++      "operation": "scale",
++    },
++  )
++
++  # Ramp each of the above from near-nominal to its full range. Starting at the
++  # full range makes the early policy fight a drivetrain it cannot yet model,
++  # which slows down learning to walk at all; widening once a gait exists keeps
++  # the robustness without paying that cost.
++  for _event_name, _stages in _DR_SCHEDULE.items():
++    cfg.curriculum[f"dr_{_event_name}"] = CurriculumTermCfg(
++      func=envs_mdp.event_curriculum,
++      params={"event_name": _event_name, "stages": deepcopy(_stages)},
++    )
++
++  # 0-20 ms of observation latency (1 step at 50 Hz) on the sensor-derived
++  # terms, covering the real DDS round trip the policy never saw before.
++  # The critic shares these term objects with the actor (critic_terms is a
++  # shallow copy of actor_terms), so replace rather than mutate in place --
++  # the value function is privileged and should see undelayed state.
++  actor_terms = cfg.observations["actor"].terms
++  for term_name in ("base_ang_vel", "projected_gravity", "joint_pos", "joint_vel"):
++    actor_terms[term_name] = replace(actor_terms[term_name], delay_max_lag=1)
++
+   cfg.viewer.body_name = "torso_link"
+ 
+   twist_cmd = cfg.commands["twist"]
+@@ -169,6 +266,11 @@ def unitree_g1_rough_env_cfg(play: bool = False) -> ManagerBasedRlEnvCfg:
+     cfg.events.pop("push_robot", None)
+     cfg.terminations.pop("out_of_terrain_bounds", None)
+     cfg.curriculum = {}
++    # Clearing the curriculum also drops the DR ramp, which would otherwise
++    # leave the events pinned at their stage-0 (near-nominal) ranges. Jump
++    # them to the final stage so play reflects what the policy trained under.
++    for _event_name, _stages in _DR_SCHEDULE.items():
++      cfg.events[_event_name].params.update(_stages[-1]["params"])
+     cfg.events["randomize_terrain"] = EventTermCfg(
+       func=envs_mdp.randomize_terrain,
+       mode="reset",
+diff --git a/src/mjlab/tasks/velocity/config/g1/rl_cfg.py b/src/mjlab/tasks/velocity/config/g1/rl_cfg.py
+index c2475f27c..f0cfa484d 100644
+--- a/src/mjlab/tasks/velocity/config/g1/rl_cfg.py
++++ b/src/mjlab/tasks/velocity/config/g1/rl_cfg.py
+@@ -44,3 +44,15 @@ def unitree_g1_ppo_runner_cfg() -> RslRlOnPolicyRunnerCfg:
+     num_steps_per_env=24,
+     max_iterations=30_000,
+   )
++
++
++def unitree_g1_sysid_ppo_runner_cfg() -> RslRlOnPolicyRunnerCfg:
++  """RL runner for the sysid-anchored G1 policy.
++
++  Identical hyperparameters to the stock G1 runner; only the experiment name
++  differs, so this policy's checkpoints land in their own log directory and
++  can be A/B tested against the other two on hardware.
++  """
++  cfg = unitree_g1_ppo_runner_cfg()
++  cfg.experiment_name = "g1_velocity_sysid"
++  return cfg

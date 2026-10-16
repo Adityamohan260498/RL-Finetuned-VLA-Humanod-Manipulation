@@ -1,0 +1,2299 @@
+{
+ "summary": {
+  "label": "roll_it2",
+  "episodes": 120,
+  "success": 0.433,
+  "lifted": 0.508,
+  "fallen": 0.0,
+  "median_place_err_cm": 4.45,
+  "stage_reach": [
+   1.0,
+   0.8,
+   0.458,
+   0.45,
+   0.4
+  ]
+ },
+ "episodes": [
+  {
+   "ep": 0,
+   "xy": [
+    0.257,
+    -0.187
+   ],
+   "yaw": 12.4,
+   "lifted": true,
+   "place_err_cm": 1.0,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 58,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 457
+  },
+  {
+   "ep": 1,
+   "xy": [
+    0.258,
+    -0.19
+   ],
+   "yaw": 2.7,
+   "lifted": true,
+   "place_err_cm": 0.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 90,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 424
+  },
+  {
+   "ep": 2,
+   "xy": [
+    0.228,
+    -0.216
+   ],
+   "yaw": 17.0,
+   "lifted": false,
+   "place_err_cm": 21.9,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 9.2,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 50
+  },
+  {
+   "ep": 3,
+   "xy": [
+    0.26,
+    -0.119
+   ],
+   "yaw": -7.6,
+   "lifted": false,
+   "place_err_cm": 12.6,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 130,
+   "drift_cm": 9.3,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 235
+  },
+  {
+   "ep": 4,
+   "xy": [
+    0.255,
+    -0.111
+   ],
+   "yaw": -10.8,
+   "lifted": false,
+   "place_err_cm": 10.3,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 490,
+   "drift_cm": 9.1,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 252
+  },
+  {
+   "ep": 5,
+   "xy": [
+    0.205,
+    -0.23
+   ],
+   "yaw": 15.9,
+   "lifted": false,
+   "place_err_cm": 24.3,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 159,
+   "drift_cm": 9.2,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 464
+  },
+  {
+   "ep": 6,
+   "xy": [
+    0.222,
+    -0.211
+   ],
+   "yaw": -12.4,
+   "lifted": true,
+   "place_err_cm": 3.1,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 153,
+   "drift_cm": 73.1,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 7,
+   "xy": [
+    0.314,
+    -0.19
+   ],
+   "yaw": -23.9,
+   "lifted": true,
+   "place_err_cm": 5.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 140,
+   "drift_cm": 10.3,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 571
+  },
+  {
+   "ep": 8,
+   "xy": [
+    0.211,
+    -0.159
+   ],
+   "yaw": -23.8,
+   "lifted": false,
+   "place_err_cm": 16.6,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 8.5,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 184
+  },
+  {
+   "ep": 9,
+   "xy": [
+    0.235,
+    -0.214
+   ],
+   "yaw": -14.4,
+   "lifted": true,
+   "place_err_cm": 5.6,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 116,
+   "drift_cm": 9.9,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 458
+  },
+  {
+   "ep": 10,
+   "xy": [
+    0.307,
+    -0.119
+   ],
+   "yaw": -12.7,
+   "lifted": false,
+   "place_err_cm": 8.5,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 239,
+   "drift_cm": 9.6,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 266
+  },
+  {
+   "ep": 11,
+   "xy": [
+    0.261,
+    -0.157
+   ],
+   "yaw": -18.3,
+   "lifted": false,
+   "place_err_cm": 14.2,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 136,
+   "drift_cm": 10.1,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 209
+  },
+  {
+   "ep": 12,
+   "xy": [
+    0.245,
+    -0.14
+   ],
+   "yaw": -4.4,
+   "lifted": false,
+   "place_err_cm": 16.1,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 249
+  },
+  {
+   "ep": 13,
+   "xy": [
+    0.252,
+    -0.162
+   ],
+   "yaw": -1.6,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 244,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 405
+  },
+  {
+   "ep": 14,
+   "xy": [
+    0.33,
+    -0.149
+   ],
+   "yaw": -1.9,
+   "lifted": false,
+   "place_err_cm": 13.2,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 176,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 296
+  },
+  {
+   "ep": 15,
+   "xy": [
+    0.262,
+    -0.212
+   ],
+   "yaw": 10.5,
+   "lifted": true,
+   "place_err_cm": 6.8,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 119,
+   "drift_cm": 62.2,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 16,
+   "xy": [
+    0.239,
+    -0.228
+   ],
+   "yaw": -17.9,
+   "lifted": true,
+   "place_err_cm": 2.3,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 112,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 17,
+   "xy": [
+    0.295,
+    -0.179
+   ],
+   "yaw": -7.4,
+   "lifted": true,
+   "place_err_cm": 0.9,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 127,
+   "drift_cm": 11.1,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 380
+  },
+  {
+   "ep": 18,
+   "xy": [
+    0.293,
+    -0.223
+   ],
+   "yaw": -14.8,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 129,
+   "drift_cm": 9.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 489
+  },
+  {
+   "ep": 19,
+   "xy": [
+    0.22,
+    -0.224
+   ],
+   "yaw": -8.8,
+   "lifted": true,
+   "place_err_cm": 0.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 165,
+   "drift_cm": 8.4,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 551
+  },
+  {
+   "ep": 20,
+   "xy": [
+    0.298,
+    -0.115
+   ],
+   "yaw": 24.1,
+   "lifted": false,
+   "place_err_cm": 0.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 144,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 479
+  },
+  {
+   "ep": 21,
+   "xy": [
+    0.2,
+    -0.129
+   ],
+   "yaw": 22.7,
+   "lifted": false,
+   "place_err_cm": 19.7,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 248,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 229
+  },
+  {
+   "ep": 22,
+   "xy": [
+    0.248,
+    -0.136
+   ],
+   "yaw": 1.2,
+   "lifted": false,
+   "place_err_cm": 14.3,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 150,
+   "drift_cm": 9.1,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 168
+  },
+  {
+   "ep": 23,
+   "xy": [
+    0.238,
+    -0.145
+   ],
+   "yaw": 14.6,
+   "lifted": false,
+   "place_err_cm": 16.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 342,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 322
+  },
+  {
+   "ep": 24,
+   "xy": [
+    0.269,
+    -0.192
+   ],
+   "yaw": -4.7,
+   "lifted": false,
+   "place_err_cm": 16.7,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 205,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 304
+  },
+  {
+   "ep": 25,
+   "xy": [
+    0.326,
+    -0.172
+   ],
+   "yaw": -2.7,
+   "lifted": true,
+   "place_err_cm": 2.7,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 315,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 560
+  },
+  {
+   "ep": 26,
+   "xy": [
+    0.309,
+    -0.147
+   ],
+   "yaw": 23.7,
+   "lifted": false,
+   "place_err_cm": 9.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 142,
+   "drift_cm": 8.3,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 218
+  },
+  {
+   "ep": 27,
+   "xy": [
+    0.3,
+    -0.133
+   ],
+   "yaw": 17.0,
+   "lifted": false,
+   "place_err_cm": 12.5,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 189,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 253
+  },
+  {
+   "ep": 28,
+   "xy": [
+    0.303,
+    -0.153
+   ],
+   "yaw": -23.1,
+   "lifted": true,
+   "place_err_cm": 0.3,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 87,
+   "drift_cm": 9.3,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 472
+  },
+  {
+   "ep": 29,
+   "xy": [
+    0.249,
+    -0.224
+   ],
+   "yaw": -3.7,
+   "lifted": true,
+   "place_err_cm": 1.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 210,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 534
+  },
+  {
+   "ep": 30,
+   "xy": [
+    0.314,
+    -0.166
+   ],
+   "yaw": 7.7,
+   "lifted": false,
+   "place_err_cm": 11.2,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 247,
+   "drift_cm": 8.4,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 263
+  },
+  {
+   "ep": 31,
+   "xy": [
+    0.293,
+    -0.209
+   ],
+   "yaw": 23.0,
+   "lifted": true,
+   "place_err_cm": 2.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 79,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 707
+  },
+  {
+   "ep": 32,
+   "xy": [
+    0.256,
+    -0.184
+   ],
+   "yaw": -14.4,
+   "lifted": true,
+   "place_err_cm": 0.8,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 104,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 434
+  },
+  {
+   "ep": 33,
+   "xy": [
+    0.21,
+    -0.165
+   ],
+   "yaw": 17.6,
+   "lifted": false,
+   "place_err_cm": 18.4,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 24,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 172
+  },
+  {
+   "ep": 34,
+   "xy": [
+    0.27,
+    -0.216
+   ],
+   "yaw": 19.6,
+   "lifted": true,
+   "place_err_cm": 2.8,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 166,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 551
+  },
+  {
+   "ep": 35,
+   "xy": [
+    0.236,
+    -0.16
+   ],
+   "yaw": -18.8,
+   "lifted": true,
+   "place_err_cm": 2.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 126,
+   "drift_cm": 11.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 456
+  },
+  {
+   "ep": 36,
+   "xy": [
+    0.275,
+    -0.195
+   ],
+   "yaw": 7.4,
+   "lifted": true,
+   "place_err_cm": 0.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 109,
+   "drift_cm": 10.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 378
+  },
+  {
+   "ep": 37,
+   "xy": [
+    0.205,
+    -0.222
+   ],
+   "yaw": -24.3,
+   "lifted": false,
+   "place_err_cm": 22.6,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 50
+  },
+  {
+   "ep": 38,
+   "xy": [
+    0.318,
+    -0.217
+   ],
+   "yaw": 24.5,
+   "lifted": false,
+   "place_err_cm": 1.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 39,
+   "xy": [
+    0.229,
+    -0.209
+   ],
+   "yaw": -7.7,
+   "lifted": true,
+   "place_err_cm": 0.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 92,
+   "drift_cm": 10.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 419
+  },
+  {
+   "ep": 40,
+   "xy": [
+    0.327,
+    -0.185
+   ],
+   "yaw": -9.5,
+   "lifted": false,
+   "place_err_cm": 13.9,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 64,
+   "drift_cm": 10.5,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 187
+  },
+  {
+   "ep": 41,
+   "xy": [
+    0.203,
+    -0.195
+   ],
+   "yaw": -6.2,
+   "lifted": true,
+   "place_err_cm": 0.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 244,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 469
+  },
+  {
+   "ep": 42,
+   "xy": [
+    0.245,
+    -0.152
+   ],
+   "yaw": 0.8,
+   "lifted": true,
+   "place_err_cm": 0.9,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 139,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 382
+  },
+  {
+   "ep": 43,
+   "xy": [
+    0.21,
+    -0.156
+   ],
+   "yaw": 18.0,
+   "lifted": false,
+   "place_err_cm": 12.0,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 611,
+   "drift_cm": 10.6,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 299
+  },
+  {
+   "ep": 44,
+   "xy": [
+    0.202,
+    -0.14
+   ],
+   "yaw": 13.0,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 747,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 831
+  },
+  {
+   "ep": 45,
+   "xy": [
+    0.3,
+    -0.226
+   ],
+   "yaw": -10.3,
+   "lifted": false,
+   "place_err_cm": 18.1,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 50
+  },
+  {
+   "ep": 46,
+   "xy": [
+    0.22,
+    -0.175
+   ],
+   "yaw": -10.1,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 119,
+   "drift_cm": 10.4,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 352
+  },
+  {
+   "ep": 47,
+   "xy": [
+    0.227,
+    -0.112
+   ],
+   "yaw": 18.9,
+   "lifted": false,
+   "place_err_cm": 12.9,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 767,
+   "drift_cm": 9.3,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 335
+  },
+  {
+   "ep": 48,
+   "xy": [
+    0.239,
+    -0.161
+   ],
+   "yaw": -22.4,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 273,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 427
+  },
+  {
+   "ep": 49,
+   "xy": [
+    0.321,
+    -0.137
+   ],
+   "yaw": -15.1,
+   "lifted": false,
+   "place_err_cm": 7.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 117,
+   "drift_cm": 10.2,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 188
+  },
+  {
+   "ep": 50,
+   "xy": [
+    0.304,
+    -0.181
+   ],
+   "yaw": 2.0,
+   "lifted": true,
+   "place_err_cm": 0.7,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 126,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 378
+  },
+  {
+   "ep": 51,
+   "xy": [
+    0.336,
+    -0.191
+   ],
+   "yaw": 4.7,
+   "lifted": true,
+   "place_err_cm": 4.0,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 115,
+   "drift_cm": 96.7,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 52,
+   "xy": [
+    0.211,
+    -0.156
+   ],
+   "yaw": 23.7,
+   "lifted": false,
+   "place_err_cm": 15.9,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 182,
+   "drift_cm": 9.3,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 199
+  },
+  {
+   "ep": 53,
+   "xy": [
+    0.214,
+    -0.213
+   ],
+   "yaw": 23.0,
+   "lifted": false,
+   "place_err_cm": 20.2,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 139,
+   "drift_cm": 10.1,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 351
+  },
+  {
+   "ep": 54,
+   "xy": [
+    0.213,
+    -0.203
+   ],
+   "yaw": -23.3,
+   "lifted": true,
+   "place_err_cm": 0.8,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 230,
+   "drift_cm": 9.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 538
+  },
+  {
+   "ep": 55,
+   "xy": [
+    0.203,
+    -0.112
+   ],
+   "yaw": 16.6,
+   "lifted": false,
+   "place_err_cm": 21.0,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 570,
+   "drift_cm": 10.1,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 56,
+   "xy": [
+    0.292,
+    -0.14
+   ],
+   "yaw": 18.5,
+   "lifted": false,
+   "place_err_cm": 13.3,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 158,
+   "drift_cm": 12.0,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 266
+  },
+  {
+   "ep": 57,
+   "xy": [
+    0.291,
+    -0.205
+   ],
+   "yaw": -14.3,
+   "lifted": true,
+   "place_err_cm": 0.7,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 159,
+   "drift_cm": 9.3,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 498
+  },
+  {
+   "ep": 58,
+   "xy": [
+    0.339,
+    -0.201
+   ],
+   "yaw": 1.4,
+   "lifted": true,
+   "place_err_cm": 1.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 9.8,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 556
+  },
+  {
+   "ep": 59,
+   "xy": [
+    0.332,
+    -0.185
+   ],
+   "yaw": 12.9,
+   "lifted": true,
+   "place_err_cm": 1.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 92,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 456
+  },
+  {
+   "ep": 60,
+   "xy": [
+    0.296,
+    -0.138
+   ],
+   "yaw": -5.0,
+   "lifted": false,
+   "place_err_cm": 10.9,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 146,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 223
+  },
+  {
+   "ep": 61,
+   "xy": [
+    0.206,
+    -0.219
+   ],
+   "yaw": 8.9,
+   "lifted": false,
+   "place_err_cm": 18.1,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 100,
+   "drift_cm": 9.9,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 250
+  },
+  {
+   "ep": 62,
+   "xy": [
+    0.224,
+    -0.121
+   ],
+   "yaw": 15.0,
+   "lifted": false,
+   "place_err_cm": 18.1,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 141,
+   "drift_cm": 10.2,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 177
+  },
+  {
+   "ep": 63,
+   "xy": [
+    0.209,
+    -0.173
+   ],
+   "yaw": 24.2,
+   "lifted": false,
+   "place_err_cm": 18.7,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 53,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 141
+  },
+  {
+   "ep": 64,
+   "xy": [
+    0.228,
+    -0.157
+   ],
+   "yaw": 3.0,
+   "lifted": true,
+   "place_err_cm": 0.8,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 197,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 380
+  },
+  {
+   "ep": 65,
+   "xy": [
+    0.292,
+    -0.183
+   ],
+   "yaw": -7.6,
+   "lifted": false,
+   "place_err_cm": 18.5,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 238,
+   "drift_cm": 10.4,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 253
+  },
+  {
+   "ep": 66,
+   "xy": [
+    0.239,
+    -0.155
+   ],
+   "yaw": -16.5,
+   "lifted": true,
+   "place_err_cm": 1.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 169,
+   "drift_cm": 13.6,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 387
+  },
+  {
+   "ep": 67,
+   "xy": [
+    0.29,
+    -0.205
+   ],
+   "yaw": 24.8,
+   "lifted": true,
+   "place_err_cm": 2.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 68,
+   "xy": [
+    0.243,
+    -0.162
+   ],
+   "yaw": -0.6,
+   "lifted": true,
+   "place_err_cm": 1.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 193,
+   "drift_cm": 9.1,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 424
+  },
+  {
+   "ep": 69,
+   "xy": [
+    0.306,
+    -0.139
+   ],
+   "yaw": -19.5,
+   "lifted": false,
+   "place_err_cm": 9.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 193,
+   "drift_cm": 9.1,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 237
+  },
+  {
+   "ep": 70,
+   "xy": [
+    0.269,
+    -0.147
+   ],
+   "yaw": 19.5,
+   "lifted": false,
+   "place_err_cm": 13.7,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 185,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 334
+  },
+  {
+   "ep": 71,
+   "xy": [
+    0.295,
+    -0.124
+   ],
+   "yaw": 0.4,
+   "lifted": false,
+   "place_err_cm": 8.8,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 6,
+   "drift_cm": 9.7,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 624
+  },
+  {
+   "ep": 72,
+   "xy": [
+    0.248,
+    -0.204
+   ],
+   "yaw": 19.6,
+   "lifted": false,
+   "place_err_cm": 21.1,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 87,
+   "drift_cm": 9.8,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 320
+  },
+  {
+   "ep": 73,
+   "xy": [
+    0.259,
+    -0.114
+   ],
+   "yaw": 12.3,
+   "lifted": false,
+   "place_err_cm": 9.9,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 261,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 215
+  },
+  {
+   "ep": 74,
+   "xy": [
+    0.241,
+    -0.159
+   ],
+   "yaw": 21.8,
+   "lifted": false,
+   "place_err_cm": 18.6,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 301,
+   "drift_cm": 10.5,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 337
+  },
+  {
+   "ep": 75,
+   "xy": [
+    0.308,
+    -0.123
+   ],
+   "yaw": 7.7,
+   "lifted": false,
+   "place_err_cm": 7.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 242,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 378
+  },
+  {
+   "ep": 76,
+   "xy": [
+    0.339,
+    -0.22
+   ],
+   "yaw": 20.8,
+   "lifted": true,
+   "place_err_cm": 6.9,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 10.2,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 430
+  },
+  {
+   "ep": 77,
+   "xy": [
+    0.308,
+    -0.151
+   ],
+   "yaw": -6.9,
+   "lifted": false,
+   "place_err_cm": 11.2,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 145,
+   "drift_cm": 13.6,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 262
+  },
+  {
+   "ep": 78,
+   "xy": [
+    0.289,
+    -0.118
+   ],
+   "yaw": -11.3,
+   "lifted": false,
+   "place_err_cm": 0.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 126,
+   "drift_cm": 10.0,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 337
+  },
+  {
+   "ep": 79,
+   "xy": [
+    0.343,
+    -0.141
+   ],
+   "yaw": -21.1,
+   "lifted": true,
+   "place_err_cm": 2.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 41,
+   "drift_cm": 10.2,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 430
+  },
+  {
+   "ep": 80,
+   "xy": [
+    0.331,
+    -0.186
+   ],
+   "yaw": 18.7,
+   "lifted": false,
+   "place_err_cm": 4.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 10.0,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 314
+  },
+  {
+   "ep": 81,
+   "xy": [
+    0.239,
+    -0.147
+   ],
+   "yaw": 24.2,
+   "lifted": false,
+   "place_err_cm": 17.9,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 162,
+   "drift_cm": 9.6,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 217
+  },
+  {
+   "ep": 82,
+   "xy": [
+    0.268,
+    -0.155
+   ],
+   "yaw": 10.7,
+   "lifted": true,
+   "place_err_cm": 0.9,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 166,
+   "drift_cm": 9.2,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 401
+  },
+  {
+   "ep": 83,
+   "xy": [
+    0.245,
+    -0.162
+   ],
+   "yaw": -14.9,
+   "lifted": true,
+   "place_err_cm": 4.5,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 42,
+   "drift_cm": 63.3,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 1125
+  },
+  {
+   "ep": 84,
+   "xy": [
+    0.263,
+    -0.171
+   ],
+   "yaw": -3.1,
+   "lifted": true,
+   "place_err_cm": 1.7,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 119,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 356
+  },
+  {
+   "ep": 85,
+   "xy": [
+    0.235,
+    -0.195
+   ],
+   "yaw": 6.8,
+   "lifted": false,
+   "place_err_cm": 18.1,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 143,
+   "drift_cm": 10.3,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 248
+  },
+  {
+   "ep": 86,
+   "xy": [
+    0.309,
+    -0.15
+   ],
+   "yaw": 19.9,
+   "lifted": true,
+   "place_err_cm": 6.1,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 26,
+   "drift_cm": 11.6,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 1125
+  },
+  {
+   "ep": 87,
+   "xy": [
+    0.29,
+    -0.2
+   ],
+   "yaw": -9.2,
+   "lifted": true,
+   "place_err_cm": 1.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 136,
+   "drift_cm": 9.1,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 472
+  },
+  {
+   "ep": 88,
+   "xy": [
+    0.334,
+    -0.143
+   ],
+   "yaw": 2.4,
+   "lifted": false,
+   "place_err_cm": 8.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 143,
+   "drift_cm": 10.0,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 272
+  },
+  {
+   "ep": 89,
+   "xy": [
+    0.269,
+    -0.193
+   ],
+   "yaw": -12.3,
+   "lifted": true,
+   "place_err_cm": 1.0,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 140,
+   "drift_cm": 11.3,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 370
+  },
+  {
+   "ep": 90,
+   "xy": [
+    0.348,
+    -0.169
+   ],
+   "yaw": 8.7,
+   "lifted": true,
+   "place_err_cm": 3.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 17,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 464
+  },
+  {
+   "ep": 91,
+   "xy": [
+    0.281,
+    -0.189
+   ],
+   "yaw": 13.7,
+   "lifted": true,
+   "place_err_cm": 2.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 218,
+   "drift_cm": 9.8,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 635
+  },
+  {
+   "ep": 92,
+   "xy": [
+    0.272,
+    -0.146
+   ],
+   "yaw": 19.0,
+   "lifted": false,
+   "place_err_cm": 11.0,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 1,
+   "hand_table_steps": 130,
+   "drift_cm": 18.0,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 312
+  },
+  {
+   "ep": 93,
+   "xy": [
+    0.296,
+    -0.228
+   ],
+   "yaw": -10.2,
+   "lifted": true,
+   "place_err_cm": 0.9,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 144,
+   "drift_cm": 8.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 568
+  },
+  {
+   "ep": 94,
+   "xy": [
+    0.237,
+    -0.225
+   ],
+   "yaw": 11.4,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 0.82,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 87,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 1125
+  },
+  {
+   "ep": 95,
+   "xy": [
+    0.324,
+    -0.152
+   ],
+   "yaw": -19.7,
+   "lifted": false,
+   "place_err_cm": 9.6,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 191,
+   "drift_cm": 8.5,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 215
+  },
+  {
+   "ep": 96,
+   "xy": [
+    0.285,
+    -0.178
+   ],
+   "yaw": 21.0,
+   "lifted": true,
+   "place_err_cm": 0.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 241,
+   "drift_cm": 8.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 421
+  },
+  {
+   "ep": 97,
+   "xy": [
+    0.335,
+    -0.14
+   ],
+   "yaw": 20.0,
+   "lifted": true,
+   "place_err_cm": 3.5,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 19,
+   "drift_cm": 9.2,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 787
+  },
+  {
+   "ep": 98,
+   "xy": [
+    0.236,
+    -0.225
+   ],
+   "yaw": 19.8,
+   "lifted": true,
+   "place_err_cm": 1.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 107,
+   "drift_cm": 8.3,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 461
+  },
+  {
+   "ep": 99,
+   "xy": [
+    0.266,
+    -0.116
+   ],
+   "yaw": -10.7,
+   "lifted": false,
+   "place_err_cm": 11.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 117,
+   "drift_cm": 9.4,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 193
+  },
+  {
+   "ep": 100,
+   "xy": [
+    0.278,
+    -0.16
+   ],
+   "yaw": -14.3,
+   "lifted": false,
+   "place_err_cm": 11.3,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 309,
+   "drift_cm": 8.8,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 231
+  },
+  {
+   "ep": 101,
+   "xy": [
+    0.226,
+    -0.137
+   ],
+   "yaw": -11.5,
+   "lifted": true,
+   "place_err_cm": 1.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 209,
+   "drift_cm": 9.0,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 422
+  },
+  {
+   "ep": 102,
+   "xy": [
+    0.259,
+    -0.2
+   ],
+   "yaw": 14.0,
+   "lifted": true,
+   "place_err_cm": 2.4,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 19,
+   "drift_cm": 9.2,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 663
+  },
+  {
+   "ep": 103,
+   "xy": [
+    0.251,
+    -0.111
+   ],
+   "yaw": -9.2,
+   "lifted": false,
+   "place_err_cm": 10.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 169,
+   "drift_cm": 10.2,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 173
+  },
+  {
+   "ep": 104,
+   "xy": [
+    0.337,
+    -0.123
+   ],
+   "yaw": 15.6,
+   "lifted": false,
+   "place_err_cm": 8.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 257,
+   "drift_cm": 9.2,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 312
+  },
+  {
+   "ep": 105,
+   "xy": [
+    0.216,
+    -0.226
+   ],
+   "yaw": -11.0,
+   "lifted": true,
+   "place_err_cm": 0.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 124,
+   "drift_cm": 9.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 475
+  },
+  {
+   "ep": 106,
+   "xy": [
+    0.261,
+    -0.222
+   ],
+   "yaw": -20.1,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 87,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 107,
+   "xy": [
+    0.309,
+    -0.16
+   ],
+   "yaw": -5.4,
+   "lifted": false,
+   "place_err_cm": 9.4,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 122,
+   "drift_cm": 8.9,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 331
+  },
+  {
+   "ep": 108,
+   "xy": [
+    0.252,
+    -0.202
+   ],
+   "yaw": 14.1,
+   "lifted": true,
+   "place_err_cm": 0.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 199,
+   "drift_cm": 8.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 445
+  },
+  {
+   "ep": 109,
+   "xy": [
+    0.348,
+    -0.17
+   ],
+   "yaw": 14.3,
+   "lifted": false,
+   "place_err_cm": 2.1,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 0,
+   "drift_cm": 9.6,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 662
+  },
+  {
+   "ep": 110,
+   "xy": [
+    0.33,
+    -0.216
+   ],
+   "yaw": -2.3,
+   "lifted": true,
+   "place_err_cm": 0.9,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 7,
+   "drift_cm": 160.3,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 111,
+   "xy": [
+    0.207,
+    -0.176
+   ],
+   "yaw": 10.4,
+   "lifted": true,
+   "place_err_cm": 16.8,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 303,
+   "drift_cm": 8.6,
+   "safety_interventions": 0,
+   "max_stage": 2,
+   "frames": 250
+  },
+  {
+   "ep": 112,
+   "xy": [
+    0.295,
+    -0.139
+   ],
+   "yaw": 14.5,
+   "lifted": false,
+   "place_err_cm": 11.0,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 207,
+   "drift_cm": 8.4,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 257
+  },
+  {
+   "ep": 113,
+   "xy": [
+    0.272,
+    -0.143
+   ],
+   "yaw": 3.5,
+   "lifted": true,
+   "place_err_cm": 1.0,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 178,
+   "drift_cm": 9.4,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 430
+  },
+  {
+   "ep": 114,
+   "xy": [
+    0.34,
+    -0.12
+   ],
+   "yaw": 4.5,
+   "lifted": false,
+   "place_err_cm": 0.7,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 232,
+   "drift_cm": 9.7,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 489
+  },
+  {
+   "ep": 115,
+   "xy": [
+    0.29,
+    -0.203
+   ],
+   "yaw": -2.5,
+   "lifted": true,
+   "place_err_cm": 0.3,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 112,
+   "drift_cm": 9.2,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 505
+  },
+  {
+   "ep": 116,
+   "xy": [
+    0.25,
+    -0.16
+   ],
+   "yaw": 18.0,
+   "lifted": true,
+   "place_err_cm": 1.0,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 113,
+   "drift_cm": 11.2,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 336
+  },
+  {
+   "ep": 117,
+   "xy": [
+    0.322,
+    -0.183
+   ],
+   "yaw": 24.3,
+   "lifted": true,
+   "place_err_cm": 3.4,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 56,
+   "drift_cm": 9.9,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 628
+  },
+  {
+   "ep": 118,
+   "xy": [
+    0.211,
+    -0.15
+   ],
+   "yaw": 17.8,
+   "lifted": false,
+   "place_err_cm": 16.8,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 143,
+   "drift_cm": 9.8,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 219
+  },
+  {
+   "ep": 119,
+   "xy": [
+    0.3,
+    -0.133
+   ],
+   "yaw": -13.6,
+   "lifted": false,
+   "place_err_cm": 10.0,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 185,
+   "drift_cm": 9.8,
+   "safety_interventions": 0,
+   "max_stage": 1,
+   "frames": 229
+  }
+ ]
+}

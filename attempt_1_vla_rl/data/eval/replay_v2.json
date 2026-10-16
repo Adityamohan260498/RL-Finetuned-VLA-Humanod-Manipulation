@@ -1,0 +1,129 @@
+{
+ "summary": {
+  "episodes": 6,
+  "legs": "stance_palmin.onnx",
+  "safety": false,
+  "success": 0.0,
+  "lifted": 0.0,
+  "fallen": 0.0,
+  "body_table_episodes": 5,
+  "median_place_err_cm": 18.3,
+  "safety_interventions": 0
+ },
+ "episodes": [
+  {
+   "ep": 0,
+   "xy": [
+    0.308,
+    -0.215
+   ],
+   "yaw": -8.6,
+   "lifted": false,
+   "place_err_cm": 22.5,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 4,
+   "hand_table_steps": 150,
+   "drift_cm": 35.3,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 751
+  },
+  {
+   "ep": 1,
+   "xy": [
+    0.284,
+    -0.148
+   ],
+   "yaw": -18.2,
+   "lifted": false,
+   "place_err_cm": 17.6,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 4,
+   "hand_table_steps": 3768,
+   "drift_cm": 21.5,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 713
+  },
+  {
+   "ep": 2,
+   "xy": [
+    0.287,
+    -0.14
+   ],
+   "yaw": -17.9,
+   "lifted": false,
+   "place_err_cm": 16.8,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 1550,
+   "drift_cm": 57.1,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 606
+  },
+  {
+   "ep": 3,
+   "xy": [
+    0.269,
+    -0.116
+   ],
+   "yaw": 4.5,
+   "lifted": false,
+   "place_err_cm": 16.1,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 4,
+   "hand_table_steps": 2872,
+   "drift_cm": 23.2,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 806
+  },
+  {
+   "ep": 4,
+   "xy": [
+    0.23,
+    -0.117
+   ],
+   "yaw": 5.4,
+   "lifted": false,
+   "place_err_cm": 19.0,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 4,
+   "hand_table_steps": 2749,
+   "drift_cm": 22.1,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 893
+  },
+  {
+   "ep": 5,
+   "xy": [
+    0.208,
+    -0.153
+   ],
+   "yaw": 3.3,
+   "lifted": false,
+   "place_err_cm": 22.5,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 4,
+   "hand_table_steps": 2978,
+   "drift_cm": 20.1,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 825
+  }
+ ]
+}

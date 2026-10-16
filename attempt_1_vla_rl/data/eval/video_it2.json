@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "episodes": 3,
+  "legs": "stance_palmin.onnx",
+  "safety": false,
+  "success": 0.3333333333333333,
+  "lifted": 1.0,
+  "fallen": 0.0,
+  "body_table_episodes": 0,
+  "median_place_err_cm": 4.0,
+  "safety_interventions": 0
+ },
+ "episodes": [
+  {
+   "ep": 0,
+   "xy": [
+    0.302,
+    -0.224
+   ],
+   "yaw": -14.0,
+   "lifted": true,
+   "place_err_cm": 0.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 51,
+   "drift_cm": 9.5,
+   "safety_interventions": 0,
+   "max_stage": 4,
+   "frames": 1125
+  },
+  {
+   "ep": 1,
+   "xy": [
+    0.228,
+    -0.209
+   ],
+   "yaw": 15.6,
+   "lifted": true,
+   "place_err_cm": 4.0,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 100,
+   "drift_cm": 176.4,
+   "safety_interventions": 0,
+   "max_stage": 0,
+   "frames": 1125
+  },
+  {
+   "ep": 2,
+   "xy": [
+    0.339,
+    -0.197
+   ],
+   "yaw": 16.0,
+   "lifted": true,
+   "place_err_cm": 5.4,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "body_table": 0,
+   "hand_table_steps": 34,
+   "drift_cm": 10.1,
+   "safety_interventions": 0,
+   "max_stage": 3,
+   "frames": 1125
+  }
+ ]
+}

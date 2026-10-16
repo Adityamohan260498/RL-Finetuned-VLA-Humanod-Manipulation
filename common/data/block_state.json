@@ -1,0 +1,31 @@
+{
+ "source": "block_pose.py silhouette fit of the known 3.5x3.5x8 cm box (previous session, IoU 0.61-0.94; 16 standing / 10 lying incl. the 5 deliberate fallen-block clips 112504-112625)",
+ "state": {
+  "20261011_111803": "standing",
+  "20261011_111826": "standing",
+  "20261011_111847": "standing",
+  "20261011_111909": "standing",
+  "20261011_111929": "standing",
+  "20261011_111944": "standing",
+  "20261011_112003": "standing",
+  "20261011_112022": "standing",
+  "20261011_112044": "standing",
+  "20261011_112121": "standing",
+  "20261011_112144": "lying",
+  "20261011_112209": "standing",
+  "20261011_112232": "standing",
+  "20261011_112255": "standing",
+  "20261011_112319": "standing",
+  "20261011_112337": "standing",
+  "20261011_112356": "lying",
+  "20261011_112415": "lying",
+  "20261011_112435": "standing",
+  "20261011_112504": "lying",
+  "20261011_112526": "lying",
+  "20261011_112547": "lying",
+  "20261011_112607": "lying",
+  "20261011_112625": "lying",
+  "20261011_112645": "lying",
+  "20261011_112700": "lying"
+ }
+}

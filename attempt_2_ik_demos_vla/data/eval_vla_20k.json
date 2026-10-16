@@ -1,0 +1,291 @@
+{
+ "summary": {
+  "episodes": 20,
+  "success": 0.6,
+  "lifted": 0.6,
+  "fallen": 0.0,
+  "median_place_err_cm": 1.9500000000000002
+ },
+ "episodes": [
+  {
+   "ep": 0,
+   "xy": [
+    0.302,
+    -0.224
+   ],
+   "yaw": -14.0,
+   "lifted": false,
+   "place_err_cm": 25.5,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 7.5
+  },
+  {
+   "ep": 1,
+   "xy": [
+    0.228,
+    -0.209
+   ],
+   "yaw": 15.6,
+   "lifted": true,
+   "place_err_cm": 1.6,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.4
+  },
+  {
+   "ep": 2,
+   "xy": [
+    0.339,
+    -0.197
+   ],
+   "yaw": 16.0,
+   "lifted": true,
+   "place_err_cm": 2.1,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 7.7
+  },
+  {
+   "ep": 3,
+   "xy": [
+    0.333,
+    -0.168
+   ],
+   "yaw": -12.8,
+   "lifted": false,
+   "place_err_cm": 4.2,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 9.0
+  },
+  {
+   "ep": 4,
+   "xy": [
+    0.324,
+    -0.204
+   ],
+   "yaw": 12.1,
+   "lifted": true,
+   "place_err_cm": 1.0,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 7.8
+  },
+  {
+   "ep": 5,
+   "xy": [
+    0.294,
+    -0.119
+   ],
+   "yaw": -13.4,
+   "lifted": true,
+   "place_err_cm": 1.3,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.6
+  },
+  {
+   "ep": 6,
+   "xy": [
+    0.32,
+    -0.168
+   ],
+   "yaw": -13.4,
+   "lifted": false,
+   "place_err_cm": 19.2,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 7.4
+  },
+  {
+   "ep": 7,
+   "xy": [
+    0.225,
+    -0.17
+   ],
+   "yaw": 4.1,
+   "lifted": true,
+   "place_err_cm": 2.3,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.7
+  },
+  {
+   "ep": 8,
+   "xy": [
+    0.228,
+    -0.228
+   ],
+   "yaw": -1.4,
+   "lifted": true,
+   "place_err_cm": 1.5,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.8
+  },
+  {
+   "ep": 9,
+   "xy": [
+    0.309,
+    -0.12
+   ],
+   "yaw": 6.3,
+   "lifted": true,
+   "place_err_cm": 1.3,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.0
+  },
+  {
+   "ep": 10,
+   "xy": [
+    0.338,
+    -0.126
+   ],
+   "yaw": -14.1,
+   "lifted": false,
+   "place_err_cm": 10.2,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 7.6
+  },
+  {
+   "ep": 11,
+   "xy": [
+    0.33,
+    -0.142
+   ],
+   "yaw": -11.1,
+   "lifted": true,
+   "place_err_cm": 1.8,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.6
+  },
+  {
+   "ep": 12,
+   "xy": [
+    0.32,
+    -0.126
+   ],
+   "yaw": -10.0,
+   "lifted": true,
+   "place_err_cm": 1.7,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 9.1
+  },
+  {
+   "ep": 13,
+   "xy": [
+    0.279,
+    -0.221
+   ],
+   "yaw": 4.2,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.2
+  },
+  {
+   "ep": 14,
+   "xy": [
+    0.236,
+    -0.138
+   ],
+   "yaw": -16.3,
+   "lifted": true,
+   "place_err_cm": 0.7,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 8.5
+  },
+  {
+   "ep": 15,
+   "xy": [
+    0.247,
+    -0.228
+   ],
+   "yaw": -23.4,
+   "lifted": false,
+   "place_err_cm": 19.9,
+   "upright": 0.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 9.4
+  },
+  {
+   "ep": 16,
+   "xy": [
+    0.275,
+    -0.174
+   ],
+   "yaw": -18.6,
+   "lifted": false,
+   "place_err_cm": 21.7,
+   "upright": -0.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 10.2
+  },
+  {
+   "ep": 17,
+   "xy": [
+    0.239,
+    -0.23
+   ],
+   "yaw": -5.9,
+   "lifted": true,
+   "place_err_cm": 1.2,
+   "upright": 1.0,
+   "success": true,
+   "fallen": false,
+   "drift_cm": 9.2
+  },
+  {
+   "ep": 18,
+   "xy": [
+    0.286,
+    -0.179
+   ],
+   "yaw": 16.8,
+   "lifted": false,
+   "place_err_cm": 20.6,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 7.4
+  },
+  {
+   "ep": 19,
+   "xy": [
+    0.292,
+    -0.198
+   ],
+   "yaw": 15.6,
+   "lifted": false,
+   "place_err_cm": 21.3,
+   "upright": 1.0,
+   "success": false,
+   "fallen": false,
+   "drift_cm": 7.5
+  }
+ ]
+}

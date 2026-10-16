@@ -1,0 +1,9 @@
+videos: 20261011_111405.mp4, 20261011_111451.mp4, 20261011_111611.mp4
+image size: 3840 x 2160
+board views: 557 detected -> 99 distinct ({'20261011_111405.mp4': 45, '20261011_111451.mp4': 0, '20261011_111611.mp4': 54}) -> 47 fitted (13 dropped as outliers), 39 held out
+lens model: k1, k2 radial (k3 and tangential fixed at 0: the full model overfits these views)
+reprojection RMS: fit views 1.43 px | held-out views median 1.31 px, p90 4.32 px, max 5.62 px
+fx 3578.8  fy 3600.0  cx 1953.3  cy 1065.8 px
+uncertainty (refits on random halves): fx +- 42 px (1.2 %), cx +- 9, cy +- 8 px
+distortion k1 k2 p1 p2 k3: [0.0724, -0.3264, 0.0, 0.0, 0.0]
+field of view: 56.4 deg horizontal, 33.4 deg vertical
